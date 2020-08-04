@@ -1,11 +1,11 @@
 var arrayList = [];
 var curIndex = -1;
 var storageKey = 'arrayList';
-function init(){
-    let json = localStorage.getItem(storageKey);
-    arrayList = JSON.parse(json);
-    displayAll();
-}
+
+let json = localStorage.getItem(storageKey);
+arrayList = JSON.parse(json);
+displayAll();
+
 function add(){
     var name = document.getElementById('name').value;
     var age = document.getElementById('age').value;
