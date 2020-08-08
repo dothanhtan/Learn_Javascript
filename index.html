@@ -11,6 +11,9 @@
     <div class="container">
         <div class="mb-5">
             <div class="row">
+                <input type="text" class="form-control" id="search" onkeyup="searchData()" placeholder="Search for names..">
+            </div>
+            <div class="row">
                 <div class="form-group mb-3 col-4">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" name="name" id="name" class="form-control">
@@ -27,7 +30,7 @@
             <button class="btn btn-outline-success" id="btn-save" onclick="add()">Submit</button>
         </div>
          
-        <table class="table table-bordered table-hover text-center">
+        <table class="table table-bordered table-hover text-center" id="table">
             <thead>
                 <tr>
                     <th>#</th>
